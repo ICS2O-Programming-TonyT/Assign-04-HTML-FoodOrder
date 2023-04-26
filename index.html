@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+  </head>
+
+  <body>
+    <div class="header">
+      <img src="./images/logo.gif" alt="logo" style="width: 65px; position: absolute; margin: 2.5rem 0rem; padding-right: 0%; top: -6px;">
+      <center><h1 class="title">| Food Order |</h1></center>
+    </div>
+    <div class="container">
+      <h1>Food Order</h1>
+      <h1>Size</h1>
+      <h2>Burger</h2>
+      <div class="burger-size-menu" style="display: flex;">
+        <div class="small-burger-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="burgers(1)" id="small-burger-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Size/Small-Burger.png" alt="small" style="width: 5rem; height: 7rem;">Small <br> $9.12</button>
+        </div>
+        <div class="regular-burger-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="burgers(2)" id="regular-burger-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Size/Regular-Burger.png" alt="regular" style="width: 5rem; height: 7rem;">Regular <br> $11.21</button>
+        </div>
+      </div>
+      
+      <h2>Fries</h2>
+      <div class="fries-size-menu" style="display: flex;">
+        <div class="regular-fries-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="fries(1)" id="regular-fries-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Size/Fries-Regular.png" alt="regular" style="width: 5rem; height: 7rem;">Regular <br> $2.47</button>
+        </div>
+        <div class="large-fries-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="fries(2)" id="large-fries-size" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Size/Fries-Large.png" alt="large" style="width: 5rem; height: 7rem;">Large <br> $3.29</button>
+        </div>
+      </div>
+      <br>
+      <h1>Toppings</h1>
+      <h2>Burger</h2>
+      <div class="toppings-menu" style="display: flex;">
+        <div class="bacon-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="toppingsfunction(1)" id="bacon-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Toppings/bacon.jpg" alt="bacon" style="width: 5rem; height: 7rem;">Bacon <br> $1.50</button>
+        </div>
+        <div class="pickles-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="toppingsfunction(2)" id="pickles-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Toppings/pickles.jpg" alt="pickles" style="width: 5rem; height: 7rem;">Pickles <br> $1.00</button>
+        </div>
+        <div class="cheese-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="toppingsfunction(3)" id="cheese-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Toppings/cheese.jpeg" alt="cheese" style="width: 5rem; height: 7rem;">Cheese <br> $0.50</button>
+        </div>
+        <div class="patties-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff;">
+          <button onclick="toppingsfunction(4)" id="patties-toppings" style="width: 7rem; height: 10rem; background-color: #fff; border-color: #fff; font-family: cursive; font-weight: bold;"><img src="./images/Menu/Toppings/patties.jpg" alt="patties" style="width: 5rem; height: 7rem;">Patties <br> $1.50</button>
+        </div>
+      </div>
+      <br>
+      <div class="cost-result">
+        <button onclick="costresult()" style="background-color: #60FF00; border-style: none; color: white; width: 5rem; height: 2rem;">Result</button>
+        <p id="cost-result"></p>
+      </div>
+      <script src="js/script.js"></script>
+  </body>
+</html>
