@@ -41,19 +41,13 @@ function burgers(itemnumber) {
     let amount = 9.12;
     small_burger.style.borderColor = "#80FF33";
     regular_burger.style.borderColor = "#fff";
-    if (burgerpricecheck(amount) == "failed") {
-      burgertotal = burgertotal-11.21;
-      burgertotal = burgertotal+amount;
-    }
+    burgertotal = amount;
     console.log(burgertotal);
   } else if (itemnumber == 2) {
     let amount = 11.21;
     regular_burger.style.borderColor = "#80FF33";
     small_burger.style.borderColor = "#fff";
-    if (burgerpricecheck(amount) == "failed") {
-      burgertotal = burgertotal-9.12;
-      burgertotal = burgertotal+amount;
-    }
+    burgertotal = amount;
     console.log(burgertotal);
   }
 }
@@ -63,19 +57,13 @@ function fries(itemnumber) {
     let amount = 2.47;
     regular_fries.style.borderColor = "#80FF33";
     large_fries.style.borderColor = "#fff";
-    if (friespricecheck(amount) == "failed") {
-      friestotal = friestotal-3.29;
-      friestotal = friestotal+amount;
-    }
+    friestotal = amount;
     console.log(friestotal);
   } else if (itemnumber == 2) {
     let amount = 3.29;
     large_fries.style.borderColor = "#80FF33";
     regular_fries.style.borderColor = "#fff";
-    if (friespricecheck(amount) == "failed") {
-      friestotal = friestotal-2.47;
-      friestotal = friestotal+amount;
-    }
+    friestotal = amount;
     console.log(friestotal);
   }
 }
